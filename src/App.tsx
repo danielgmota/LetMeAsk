@@ -1,12 +1,10 @@
-import {Button} from './components/Button'
-import { Home } from './pages/Home';
+import { Button } from './components/Button';
+import { NewRoom } from './pages/NewRom';
 
-import './styles/global.scss'
+import './styles/global.scss';
 
 function App() {
-  return (
-    <Home />
-  );
+  return <NewRoom />;
 }
 
 export default App;
