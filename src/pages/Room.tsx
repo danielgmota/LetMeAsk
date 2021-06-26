@@ -4,7 +4,7 @@ import { RoomCode } from '../components/RoomCode';
 import logoImg from '../assets/images/logo.svg';
 
 import '../styles/room.scss';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { FormEvent, useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { database } from '../services/firebase';
@@ -68,7 +68,9 @@ export function Room() {
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoImg} alt="Let Me Ask" />
+          <Link to="/">
+            <img src={logoImg} alt="Let Me Ask" />
+          </Link>
           <RoomCode code={roomId} />
         </div>
       </header>
